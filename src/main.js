@@ -4,9 +4,9 @@ import store from './store'
 import Vue from 'vue'
 import "tailwindcss/tailwind.css"
 
-// import Router from 'vue-router'
+import Router from 'vue-router'
 
-// Vue.use(Router)
+Vue.use(Router)
 
 new Vue({
   store,
