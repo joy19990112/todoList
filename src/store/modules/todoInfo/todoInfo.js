@@ -4,7 +4,7 @@ const state = {
   todoList: [
     {
       // 计划名称
-      planNm: 'plan 1',
+      planNm: 'planOne',
       // 计划完成时间
       planDt: '20230714',
       // 计划状态 0-未完成/1-已完成
