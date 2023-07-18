@@ -7,8 +7,18 @@ const state = {
       planNm: 'planOne',
       // 计划完成时间
       planDt: '20230714',
-      // 计划状态 0-未完成/1-已完成
-      planSta: '0',
+      // 计划状态 false-未完成/true-已完成
+      planSta: true,
+      // 计划选中状态
+      planChecked: false
+    },
+    {
+      // 计划名称
+      planNm: 'planTwo',
+      // 计划完成时间
+      planDt: '20230718',
+      // 计划状态 false-未完成/true-已完成
+      planSta: false,
       // 计划选中状态
       planChecked: false
     }

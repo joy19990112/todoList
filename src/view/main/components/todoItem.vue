@@ -1,20 +1,26 @@
 <template>
-  <div>
+  <div class="flex">
     <!-- 复选框 -->
-    <!-- 事项名称 -->
-    {{ todoItem.planNm }}
-    <!-- 时间 -->
-    {{ todoItem.planDt }}
-    <!-- 状态 -->
-    {{ todoItem.planSta }}
+    <van-checkbox v-model="todoItem.planChecked"
+                  @change="changePlanChecked(todoItem)"
+                  shape="square"></van-checkbox>
+    <div>
+      <!-- 事项名称 -->
+      <span :class="todoItem.planSta ? 'line-through' : ''">{{ todoItem.planNm }}</span>
+      <!-- 时间 -->
+      {{ todoItem.planDt }}
+    </div>
     <!-- 编辑按钮 -->
     <!-- 删除按钮 -->
   </div>
 </template>
 
 <script>
+import { Checkbox } from 'vant';
 export default {
-  components: {},
+  components: {
+    VanCheckbox: Checkbox
+  },
   props: {
     todoItem: {
       type: Object,
@@ -28,7 +34,12 @@ export default {
 
   created() { },
   mounted() { },
-  methods: {},
+  methods: {
+    // 改变复选框状态
+    changePlanChecked(e) {
+      console.log('eee', e);
+    }
+  },
   computed: {},
 }
 </script>
