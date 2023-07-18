@@ -5,23 +5,30 @@
   2.增加功能
  -->
 <template>
-  <div></div>
+  <div>
+    <!-- 搜索/输入框 -->
+    <van-search v-model="searchValue" />
+  </div>
 </template>
 
 <script>
+import { Search } from 'vant';
 export default {
-components: {},
-props: {},
-data() {
- return {
- };
-},
+  components: {
+    VanSearch: Search
+  },
+  props: {},
+  data() {
+    return {
+      // 搜索内容
+      searchValue: ''
+    };
+  },
 
-created() {},
-mounted() {},
-methods: {},
-computed: {},
+  created() { },
+  mounted() { },
+  methods: {},
+  computed: {},
 }
 </script>
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

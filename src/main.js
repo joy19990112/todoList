@@ -8,8 +8,12 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+import vant from 'vant';
+import 'vant/lib/index.css';
+
 new Vue({
   store,
   router,
+  vant,
   render: h => h(App),
 }).$mount('#app')
