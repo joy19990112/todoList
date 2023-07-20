@@ -8,6 +8,12 @@
   <div>
     <!-- 搜索/输入框 -->
     <van-search v-model="searchValue" />
+    <div>
+      <!-- 添加按钮 -->
+      <van-button @click="addTodoItem">添加</van-button>
+      <!-- 搜索按钮 -->
+      <van-button @click="searchTodo">搜索</van-button>
+    </div>
   </div>
 </template>
 
@@ -27,7 +33,13 @@ export default {
 
   created() { },
   mounted() { },
-  methods: {},
+  methods: {
+    // 添加
+    addTodoItem() { },
+    // 搜索
+    searchTodo() { }
+
+  },
   computed: {},
 }
 </script>

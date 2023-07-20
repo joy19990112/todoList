@@ -7,11 +7,11 @@
 <template>
   <div>
     <!-- 全选 -->
-    <van-button>全选</van-button>
+    <van-button @click="selectAll">全选</van-button>
     <!-- 已完成 -->
-    <van-button>已完成</van-button>
+    <van-button @click="doneItem">已完成</van-button>
     <!-- 删除 -->
-    <van-button>删除</van-button>
+    <van-button @click="deleteItem">删除</van-button>
   </div>
 </template>
 
@@ -30,7 +30,14 @@ export default {
 
   created() { },
   mounted() { },
-  methods: {},
+  methods: {
+    // 全选
+    selectAll() { },
+    // 已完成
+    doneItem() { },
+    // 删除
+    deleteItem() { }
+  },
   computed: {},
 }
 </script>
