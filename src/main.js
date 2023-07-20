@@ -11,6 +11,9 @@ Vue.use(Router)
 import vant from 'vant';
 import 'vant/lib/index.css';
 
+import dayjs from "dayjs"
+Vue.prototype.$dayjs = dayjs;
+
 new Vue({
   store,
   router,
