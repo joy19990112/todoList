@@ -17,6 +17,5 @@ Vue.prototype.$dayjs = dayjs;
 new Vue({
   store,
   router,
-  vant,
   render: h => h(App),
 }).$mount('#app')
